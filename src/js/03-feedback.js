@@ -24,7 +24,6 @@ pars = JSON.parse(localStorage.getItem(`feedback-form-state`))
             console.log (pars.email)
             console.log (pars.message)
             } 
-        
  else {inputEl.textContent = "";
                 text.textContent = "";
             }}
@@ -41,5 +40,4 @@ event.currentTarget.reset();
 localStorage.removeItem(`feedback-form-state`)
      } else {alert ("заповніть всі поля")}}
 
-
-// Сделай так, чтобы хранилище обновлялось не чаще чем раз в 500 миллисекунд. Для этого добавь в проект и используй библиотеку lodash.throttle.
+     // Сделай так, чтобы хранилище обновлялось не чаще чем раз в 500 миллисекунд. Для этого добавь в проект и используй библиотеку lodash.throttle.
