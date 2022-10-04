@@ -17,7 +17,7 @@ function onForm (evt){
 
 // При загрузке страницы проверяй состояние хранилища, и если там есть сохраненные данные, заполняй ими поля формы. В противном случае поля должны быть пустыми.
 function checking() {
-pars = JSON.parse(localStorage.getItem(`feedback-form-state`))
+const pars = JSON.parse(localStorage.getItem(`feedback-form-state`))
        if (pars){
             inputEl.value = pars.email;
             text.value = pars.message;
